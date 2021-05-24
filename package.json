@@ -10,9 +10,17 @@
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
+    "email-validator": "^2.0.4",
+    "firebase": "^8.6.1",
+    "moment": "^2.29.1",
     "next": "10.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "styled-components": "^5.3.0"
+    "react-firebase-hooks": "^3.0.4",
+    "styled-components": "^5.3.0",
+    "timeago-react": "^3.0.2"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.12.0"
   }
 }
