@@ -37,10 +37,32 @@ const MessageElement = styled.p`
 const Sender = styled(MessageElement)`
 	background-color: #dcf8c6;
 	margin-left: auto;
+	border-top-right-radius: 0;
+
+	::after {
+		content: " ";
+		position: absolute;
+		top: 0;
+		left: 100%; /* To the left of the tooltip */
+		border-width: 5px;
+		border-style: solid;
+		border-color: #dcf8c6 transparent transparent #dcf8c6;
+	}
 `;
 const Receiver = styled(MessageElement)`
 	background-color: whitesmoke;
 	text-align: left;
+	border-top-left-radius: 0;
+
+	::after {
+		content: " ";
+		position: absolute;
+		top: 0;
+		right: 100%; /* To the left of the tooltip */
+		border-width: 5px;
+		border-style: solid;
+		border-color: whitesmoke whitesmoke transparent transparent;
+	}
 `;
 
 const Timestamp = styled.span`
